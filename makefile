@@ -4,12 +4,12 @@ VERSIONSHORT=253
 SRCDIR = ..\vliv\src\
 
 NSIS  = "c:\program files (x86)\nsis\makensis.exe"
-NSISFLAGS = /DVERSION=$(VERSION) /DVERSIONSHORT=$(VERSIONSHORT)
+NSISFLAGS = /DVERSION=$(VERSION) /V4 /DVERSIONSHORT=$(VERSIONSHORT)
 
 
-all: vliv$(VERSIONSHORT).exe
+all: vliv$(VERSIONSHORT).exe 
 
-vliv$(VERSIONSHORT).exe:
+vliv$(VERSIONSHORT).exe: vlivmui.nsi
 	$(NSIS) $(NSISFLAGS) vlivmui.nsi
 
 clean:

@@ -7,8 +7,8 @@ InstallDir $PROGRAMFILES\Vliv
 InstallDirRegKey HKLM "Software\Delhoume\Vliv" "Install_Dir"
 XPStyle on
 
-;Include Modern UI
-!include "MUI.nsh"
+;Include Modern UI 2
+!include "MUI2.nsh" 
 
 ;Modern UI Configuration
 !define MUI_ABORTWARNING
