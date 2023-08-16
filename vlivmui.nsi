@@ -3,7 +3,7 @@ SetCompressor LZMA
 !define VlivName "Vliv ${VERSION}"
 Name "${VlivName}"
 OutFile "vliv${VERSIONSHORT}.exe"
-InstallDir $PROGRAMFILES\Vliv
+InstallDir $PROGRAMFILES64\Vliv
 InstallDirRegKey HKLM "Software\Delhoume\Vliv" "Install_Dir"
 XPStyle on
 
@@ -41,12 +41,12 @@ File "..\vliv\src\vliv.exe"
 File "..\vliv\src\components\ownd.dll"
 SetOutPath $INSTDIR\plugins
 File "..\vlivplugins\internal\vliv.dll"
-File "..\vlivplugins\avi\avi.dll"
+;File "..\vlivplugins\avi\avi.dll"
 ;File "..\vlivplugins\jpeg2000\jpeg2000.dll"
-File "..\vlivplugins\qoi\qoi.dll"
+;File "..\vlivplugins\qoi\qoi.dll"
 ;File "..\vlivplugins\webp\webp.dll"
 ;File "..\vlivplugins\wic\wic.dll"
-File "..\vliv\src\plugins\debug\debug.dll"
+;File "..\vliv\src\plugins\debug\debug.dll"
 File "..\vliv\src\plugins\newton\newton.dll"
 File "..\vliv\src\plugins\lyapunov\lyapunov.dll"
 SetOutPath $INSTDIR\devel
